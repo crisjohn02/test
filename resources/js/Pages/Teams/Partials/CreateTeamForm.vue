@@ -15,6 +15,7 @@ const createTeam = () => {
         errorBag: 'createTeam',
         preserveScroll: true,
     });
+    console.log('test')
 };
 </script>
 
