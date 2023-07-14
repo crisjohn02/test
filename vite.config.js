@@ -12,7 +12,7 @@ export default defineConfig({
         vue({
             template: {
                 transformAssetUrls: {
-                    base: 'ide-build/',
+                    base: null,
                     includeAbsolute: false,
                 },
             },
