@@ -3,11 +3,11 @@ import laravel from 'laravel-vite-plugin';
 import vue from '@vitejs/plugin-vue';
 
 export default defineConfig({
-    base: '/test/build/',
     plugins: [
         laravel({
             input: 'resources/js/app.js',
             refresh: true,
+            buildDirectory: 'ide-build'
         }),
         vue({
             template: {
@@ -17,12 +17,5 @@ export default defineConfig({
                 },
             },
         }),
-    ],
-    build: {
-        rollupOptions: {
-            output: {
-                manualChunks: undefined
-            }
-        }
-    }
+    ]
 });
