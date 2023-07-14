@@ -3,7 +3,7 @@ import laravel from 'laravel-vite-plugin';
 import vue from '@vitejs/plugin-vue';
 
 export default defineConfig({
-    base: 'ide-build/',
+    base: '/ide-build/',
     plugins: [
         laravel({
             input: 'resources/js/app.js',
@@ -13,7 +13,7 @@ export default defineConfig({
         vue({
             template: {
                 transformAssetUrls: {
-                    base: null,
+                    base: 'ide-build',
                     includeAbsolute: false,
                 },
             },
